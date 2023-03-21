@@ -29,6 +29,18 @@ No arquivo Matriz.cpp, duas funções foram declaradas: uma responsável por ler
 <img src="https://user-images.githubusercontent.com/127882640/226614863-49e7a6cb-5119-4769-87a1-3d0b2adc37aa.png" width="650px">
 </div>
 
+<br>Quando uma posição é avançada, o marcador substitui o valor daquela posição, transformando o número que ali se encontrava em "-1". Antes dessa transformação, o valor da posição é armazenada em uma variável, para que, assim, seja dado o total do caminho percorrido.<br>
+<div align=center>
+<img src="https://user-images.githubusercontent.com/127882640/226620540-31e20890-7e0a-42e9-926e-c052b7b1a755.png" width="450px"/>
+<img src="https://user-images.githubusercontent.com/127882640/226620658-2fbf5e03-eb0d-4b86-981a-8e36e77b9233.png" width="450px"/>
+</div>
+<br>Tal movimentação continua até que a linha N e a Coluna N da matriz (NxN) seja atingida.
+<br>Esse processo é realizado com todas as matrizes do arquivo ".data".
+
+# Implementação 
+
+Considere a seguinte matriz (7x7) como teste do problema proposto:
+
 # Compilação e Execução
 
 Um arquivo Makefile que realiza todo o procedimento de compilação e execução está disponível no código. Para utilizá-lo, siga as diretrizes de execução no terminal:
