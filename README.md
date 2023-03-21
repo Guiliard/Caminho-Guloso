@@ -8,7 +8,7 @@
 
 # Descrição do problema
 <p>Em um arquivo do tipo ".data", localiza-se um determinado número de matrizes quadradas, as quais possuem inteiros positivos e devem ser escaneadas e transferidas para um código, o qual possui como objetivo realizar o caminhamento.<br>
-Esse caminhamento das matrizes se inicia na posição linha 0 e coluna 0. A partir disso, todas as posições devem ser verificadas para que o marcador de posição avance para o maior valor que se encontra nas 5 direções possíveis e, além disso, a uma casa de distância da posição atual. Feito isso, o processo continua até que o marcador chegue na posição linha N e coluna N, ou seja, na posição final da matriz. Tendo atingido o objetivo, o programa se encerra e o somatório dos valores percorridos deve ser mostrado.</p>
+Esse caminhamento das matrizes se inicia ou na posição linha 0 e coluna 0, ou na posição que o usuário escolher. A partir disso, todas as posições devem ser verificadas para que o marcador de posição avance para o maior valor que se encontra nas 5 direções possíveis e, além disso, a uma casa de distância da posição atual. Feito isso, o processo continua até que o marcador chegue na posição linha N e coluna N, ou seja, na posição final da matriz. Tendo atingido o objetivo, o programa se encerra e o somatório dos valores percorridos deve ser mostrado.</p>
 
 # Solução proposta
 <p>Para esse tipo de problema, foi proposto um código que contém 3 arquivos: Matriz.hpp, Matriz.cpp e Main.cpp.<br>
@@ -17,7 +17,7 @@ Esse caminhamento das matrizes se inicia na posição linha 0 e coluna 0. A part
 - Matriz.cpp: Possui a declaração das funções. <br>
 - Main.cpp: Arquivo mais importante, responsável por chamar as funções envolvidas e realizar o processo.<br>
 
-No arquivo Matriz.cpp, duas funções foram declaradas: uma responsável por ler a matriz do arquivo ".data" e transferir-lá para o código e outra responsável por realizar o caminhamento. Nessa última função, o usuário pode escolher a posição inicial do deslocamento. Vale ressaltar que tal caminhamento foi feito através de uma ordem de prioridade, obedecendo a seguinte hierarquia: 
+No arquivo Matriz.cpp, duas funções foram declaradas: uma responsável por ler a matriz do arquivo ".data" e transferir-lá para o código e outra responsável por realizar o caminhamento. Nessa última função, o usuário pode escolher a posição de início. Vale ressaltar, também, que tal caminhamento foi feito através de uma ordem de prioridade, obedecendo a seguinte hierarquia: 
 
 - Leste
 - Oeste
@@ -31,11 +31,14 @@ No arquivo Matriz.cpp, duas funções foram declaradas: uma responsável por ler
 
 <br>Quando uma posição é avançada, o marcador substitui o valor daquela posição, transformando o número que ali se encontrava em "-1". Antes dessa transformação, o valor da posição é armazenada em uma variável, para que, assim, seja dado o total do caminho percorrido.<br>
 <div align=center>
-<img src="https://user-images.githubusercontent.com/127882640/226620540-31e20890-7e0a-42e9-926e-c052b7b1a755.png" width="420px"/>
+<img src="https://user-images.githubusercontent.com/127882640/226620540-31e20890-7e0a-42e9-926e-c052b7b1a755.png" hspace="50px" width="420px"/>
 <img src="https://user-images.githubusercontent.com/127882640/226620658-2fbf5e03-eb0d-4b86-981a-8e36e77b9233.png" width="420px"/>
 </div>
-<br>Tendo em vista que o algorítmo é guloso, é que os caminhamentos feitos anteriormente são irretornáveis, quando o marcador atinge ou a linha N ou a coluna N, o caminhamento é realizado em uma só direção (em linha reta), ou seja, quando essa condição acontece, a prioridade de movimento é alterada.<br><br>
-Caso se tenha atingido a linha N:<br><br>
+
+# Casos Especiais
+
+Tendo em vista que o algorítmo é guloso, é que os caminhamentos feitos anteriormente são irretornáveis, quando o marcador atinge ou a linha N ou a coluna N, o caminhamento é realizado em uma só direção (em linha reta), ou seja, quando essa condição acontece, a prioridade de movimento é alterada.<br><br>
+Caso se tenha atingido a linha N:<br>
 
 - Somente Leste
 
