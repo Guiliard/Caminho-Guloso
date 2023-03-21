@@ -40,7 +40,7 @@ No arquivo Matriz.cpp, duas funções foram declaradas: uma responsável por ler
 
 <br>Quando uma posição é avançada, o marcador substitui o valor daquela posição, transformando o número que ali se encontrava em "-1". Antes dessa transformação, o valor da posição é armazenada em uma variável, para que, assim, seja dado o total do caminho percorrido.<br>
 <div align=center>
-<img src="https://user-images.githubusercontent.com/127882640/226620540-31e20890-7e0a-42e9-926e-c052b7b1a755.png" hspace="50px" width="420px"/>
+<img src="https://user-images.githubusercontent.com/127882640/226620540-31e20890-7e0a-42e9-926e-c052b7b1a755.png" hspace="40px" width="420px"/>
 <img src="https://user-images.githubusercontent.com/127882640/226620658-2fbf5e03-eb0d-4b86-981a-8e36e77b9233.png" width="420px"/>
 </div>
 
