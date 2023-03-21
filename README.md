@@ -17,7 +17,7 @@ Esse caminhamento das matrizes se inicia na posição linha 0 e coluna 0. A part
 - Matriz.cpp: Possui a declaração das funções. <br>
 - Main.cpp: Arquivo mais importante, responsável por chamar as funções envolvidas e realizar o processo.<br>
 
-No arquivo Matriz.cpp, duas funções foram declaradas: uma responsável por ler a matriz do arquivo ".data" e transferir-lá para o código e outra responsável por realizar o caminhamento. O usuário pode escolher a posição inicial. Vale ressaltar que tal caminhamento foi feito através de uma ordem de prioridade, obedecendo a seguinte hierarquia: 
+No arquivo Matriz.cpp, duas funções foram declaradas: uma responsável por ler a matriz do arquivo ".data" e transferir-lá para o código e outra responsável por realizar o caminhamento. Nessa última função, o usuário pode escolher a posição inicial do deslocamento. Vale ressaltar que tal caminhamento foi feito através de uma ordem de prioridade, obedecendo a seguinte hierarquia: 
 
 - Leste
 - Oeste
