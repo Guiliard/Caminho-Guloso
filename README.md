@@ -34,7 +34,7 @@ No arquivo Matriz.cpp, duas funções foram declaradas: uma responsável por ler
 <img src="https://user-images.githubusercontent.com/127882640/226620540-31e20890-7e0a-42e9-926e-c052b7b1a755.png" width="420px"/>
 <img src="https://user-images.githubusercontent.com/127882640/226620658-2fbf5e03-eb0d-4b86-981a-8e36e77b9233.png" width="420px"/>
 </div>
-<br>Tal movimentação continua até que a linha N e a Coluna N da matriz (NxN) seja atingida.
+<br>Tendo em vista que o algorítmo é guloso, é que os caminhamentos feitos anteriormente são irretornáveis, quando o marcador atinge ou a linha N ou a coluna N, o caminhamento é realizado em uma só direção (em linha reta). Tal movimentação continua até que a linha N e a Coluna N da matriz (NxN) seja atingida.
 <br>Esse processo é realizado com todas as matrizes do arquivo ".data".
 
 # Implementação 
