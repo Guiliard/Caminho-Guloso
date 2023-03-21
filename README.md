@@ -53,7 +53,10 @@ Considere a seguinte matriz (7x7) como teste do problema proposto:
 <div align=center>
 <img src="https://user-images.githubusercontent.com/127882640/226637423-a8903ee5-a625-44d8-822d-e18f76b982c5.png" width="400px">
 </div>
-O resultado esperado é:
+O resultado esperado é:<br>
+<br><div align=center>
+<img src="https://user-images.githubusercontent.com/127882640/226643911-338c30e3-62b4-40d3-90f8-ac45a4ed6a84.png" width="850px">
+</div>
 
 # Compilação e Execução
 
