@@ -16,8 +16,8 @@
 <p>Foi proposto um problema de caminhamento de matrizes quadradas (NxN) de forma gulosa, ou seja, aquele que opta por um caminho específico e não há a possibilidade de retorno. Nesse problema, o caminho a ser escolhido limita-se entre 5 direções (Oeste, Sudoeste, Sul, Sudeste, Leste), e, também, para a direção que possui o maior valor. </p>
 
 # Descrição do problema
-<p>Em um arquivo do tipo ".data", localiza-se um determinado número de matrizes quadradas, as quais possuem inteiros positivos e devem ser escaneadas e transferidas para um código, o qual possui como objetivo realizar o caminhamento.<br>
-Esse caminhamento das matrizes se inicia ou na posição linha 0 e coluna 0, ou na posição que o usuário escolher. A partir disso, todas as posições devem ser verificadas para que o marcador de posição avance para o maior valor que se encontra nas 5 direções possíveis e, além disso, a uma casa de distância da posição atual. Feito isso, o processo continua até que o marcador chegue na posição linha N e coluna N, ou seja, na posição final da matriz. Tendo atingido o objetivo, o programa se encerra e o somatório dos valores percorridos deve ser mostrado.</p>
+<p>Em um arquivo do tipo ".data", localiza-se um determinado número de matrizes quadradas, as quais possuem, em suas posições, inteiros positivos e devem ser escaneadas e transferidas para um código, que tem como objetivo realizar o caminhamento.<br>
+Esse deslocamento das matrizes se inicia ou na posição linha 0 e coluna 0, ou na posição que o usuário escolher. A partir disso, todas as posições devem ser verificadas para que o marcador de posição avance para o maior valor que se encontra nas 5 direções possíveis e, além disso, a uma casa de distância da posição atual. Feito isso, o processo continua até que o marcador chegue na posição linha N e coluna N, ou seja, na posição final da matriz. Tendo atingido o objetivo, o programa se encerra e o somatório dos valores percorridos deve ser mostrado.</p>
 
 # Solução proposta
 <p>Para esse tipo de problema, foi proposto um código que contém 3 arquivos: Matriz.hpp, Matriz.cpp e Main.cpp.<br>
