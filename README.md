@@ -26,7 +26,7 @@ Esse deslocamento das matrizes se inicia ou na posição linha 0 e coluna 0, ou 
 - Matriz.cpp: Possui a declaração das funções. <br>
 - Main.cpp: Arquivo mais importante, responsável por chamar as funções envolvidas e realizar o processo.<br>
 
-No arquivo Matriz.cpp, duas funções foram declaradas: uma responsável por ler a matriz do arquivo ".data" e transferir-lá para o código e outra responsável por realizar o caminhamento. Nessa última função, o usuário pode escolher a posição de início. Vale ressaltar, também, que tal deslocamento foi feito através de uma ordem de prioridade, obedecendo a seguinte hierarquia: 
+No arquivo Matriz.cpp, duas funções foram declaradas: uma responsável por ler a matriz do arquivo ".data" e transferir-lá para o código e outra responsável por realizar o caminhamento. Nessa última função, o usuário pode escolher a posição de início. Vale ressaltar, também, que tal deslocamento foi feito através da ordem de prioridade: caso todos os números que se encontram nas 5 direções sejam diferentes, a prioridade é orientada para o maior valor. Contudo, caso pelo menos dois números nas 5 direções sejam iguais, a prioridade é orientada obedecendo a seguinte hierarquia: 
 
 - Leste
 - Oeste
@@ -35,18 +35,40 @@ No arquivo Matriz.cpp, duas funções foram declaradas: uma responsável por ler
 - Sudoeste
 
 <div align=center>
+<img src="https://user-images.githubusercontent.com/127882640/227197354-0b889c0a-a7cc-4373-81e0-9ee7317efd52.png" width="650px">
+</div>
+<p  align="center">
+Ordem de prioridade orientada no maior valor. A seta amarela indica para qual posição o marcador avançaria.
+</p>
+<br>
+<div align=center>
 <img src="https://user-images.githubusercontent.com/127882640/226614863-49e7a6cb-5119-4769-87a1-3d0b2adc37aa.png" width="650px">
 </div>
+<p  align="center">
+Ordem de prioridade orientada na hierarquia das direções. Os números em ordem crescente indicam para quais posições o marcador avançaria.
+</p>
 
-<br>Quando uma posição é avançada, o marcador substitui o valor daquela posição, transformando o número que ali se encontrava em "-1". Antes dessa transformação, o valor da posição é armazenada em uma variável, para que, assim, seja dado o total do caminho percorrido.<br>
+<br>Quando uma posição é avançada, e o marcador substitui o valor daquela posição, transformando o número que ali se encontrava em "-1". Antes dessa transformação, o valor da posição é armazenada em uma variável, para que, assim, seja dado o total do caminho percorrido.<br><br>
 <div align=center>
 <img src="https://user-images.githubusercontent.com/127882640/226620540-31e20890-7e0a-42e9-926e-c052b7b1a755.png" hspace="50px" width="420px"/>
 <img src="https://user-images.githubusercontent.com/127882640/226620658-2fbf5e03-eb0d-4b86-981a-8e36e77b9233.png" width="420px"/>
 </div>
+<p  align="center">
+Caso de orientação pelo maior valor.
+</p>
+<br>
+<div align=center>
+<img src="https://user-images.githubusercontent.com/127882640/227199970-54a274af-8cc2-4278-9824-23ffd654a7a6.png" hspace="50px" width="420px"/>
+<img src="https://user-images.githubusercontent.com/127882640/227200305-af55f56c-9672-4930-84f0-50e489d8f3ae.png" width="420px"/>
+</div>
+<p  align="center">
+Caso de orientação pela direção. Obedecendo a hierarquia, oeste possuí mais prioridade do que sul e sudoeste.
+</p>
+<br>
 
 # Casos Especiais
 
-Tendo em vista que o algorítmo é guloso, é que os caminhamentos feitos anteriormente são irretornáveis, quando o marcador atinge ou a linha N ou a coluna N, o caminhamento é realizado em uma só direção (em linha reta), ou seja, quando essa condição acontece, a prioridade de movimento é alterada.<br><br>
+Tendo em vista que o algorítmo é guloso, é que os caminhamentos feitos anteriormente são irretornáveis, quando o marcador atinge ou a maior linha (linha N) ou a maior coluna (coluna N), o caminhamento é realizado em uma só direção (em linha reta), ou seja, quando essa condição acontece, a prioridade de movimento é alterada.<br><br>
 Caso se tenha atingido a linha N:<br>
 
 - Somente Leste
@@ -56,7 +78,7 @@ Caso se tenha atingido a coluna N:<br>
 - Somente Sul
 
 Tal movimentação continua até que a linha N e a Coluna N da matriz (NxN) seja atingida.
-<br>Esse processo é realizado com todas as matrizes do arquivo ".data". É importante salientar que esse arquivo também possuí o tamanho da matriz definido.
+<br>Esse processo é realizado com todas as matrizes do arquivo ".data". É importante salientar que esse arquivo também possuí o tamanho da matriz definido na primeira linha.
 
 # Implementação 
 
@@ -66,7 +88,7 @@ Considere a seguinte matriz (7x7) como teste do problema proposto:
 </div>
 O resultado esperado é:<br>
 <br><div align=center>
-<img src="https://user-images.githubusercontent.com/127882640/226643911-338c30e3-62b4-40d3-90f8-ac45a4ed6a84.png" width="850px">
+<img src="https://user-images.githubusercontent.com/127882640/227205287-2885d5f9-1dcd-4477-a469-f8c6925e8409.png" width="850px">
 </div>
 
 # Compilação e Execução
