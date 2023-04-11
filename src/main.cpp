@@ -6,7 +6,7 @@ int main()
     string linha;
     fstream arq;
 
-    arq.open("input.data");
+    arq.open("dataset/input.data");
     if(arq.is_open())
     {
         arq >> tamanho;
